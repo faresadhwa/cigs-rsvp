@@ -555,8 +555,8 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
   mix-blend-mode: screen;
 }
 .partner-row-lead .partner-logo {
-  height: 60px;
-  max-width: 180px;
+  height: 80px;
+  max-width: 240px;
 }
 .logo-invert {
   filter: grayscale(1) invert(1);
