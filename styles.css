@@ -523,7 +523,7 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
 .partner-name {
   display: block;
   font-family: 'Syncopate', sans-serif;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.05em;
   background: linear-gradient(135deg, #fff, #b8b4d4);
@@ -531,7 +531,36 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
   background-clip: text;
   color: transparent;
 }
-.partner-card.sm .partner-name { font-size: 12px; }
+.partner-card.sm .partner-name { font-size: 14px; }
+.logo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo-card .partner-logo,
+.logo-card .partner-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.partner-logo {
+  height: 44px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: screen;
+}
+.partner-row-lead .partner-logo {
+  height: 60px;
+  max-width: 180px;
+}
+.logo-invert {
+  filter: grayscale(1) invert(1);
+}
 
 /* ------------------------------------------------------------------
    RSVP FORM
@@ -577,6 +606,60 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
 }
 .rsvp-facts strong { color: var(--text); }
 
+.rsvp-centered {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.rsvp-top { margin-bottom: 40px; }
+.rsvp-top h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+.rsvp-top p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-weight: 300;
+}
+.rsvp-details-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin-bottom: 36px;
+  background: var(--surface);
+}
+.rsvp-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 6px 20px;
+}
+.rsvp-detail svg { color: var(--accent); flex-shrink: 0; opacity: 0.85; }
+.rsvp-detail-sep {
+  width: 1px;
+  height: 20px;
+  background: var(--border-2);
+  flex-shrink: 0;
+}
+.btn-rsvp-main {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 48px;
+  border-radius: 10px;
+}
 .rsvp-form {
   background: var(--surface);
   border: 1px solid var(--border);
