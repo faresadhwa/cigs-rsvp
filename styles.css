@@ -575,9 +575,21 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
   height: 80px;
   max-width: 240px;
 }
-.partner-row-lead .partner-logo-group .logo-myx {
+.logo-myx-wrapper {
+  flex: none;
+  width: 180px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-myx {
   height: 200px;
-  max-width: 200px;
+  width: auto;
+  max-width: none;
+  display: block;
+  mix-blend-mode: screen;
 }
 .logo-invert {
   filter: grayscale(1) invert(1);
