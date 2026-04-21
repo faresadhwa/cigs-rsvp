@@ -572,20 +572,20 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
   flex: none;
 }
 .partner-row-lead .partner-logo-group .partner-logo {
-  height: 80px;
-  max-width: 240px;
+  height: 110px;
+  max-width: 280px;
 }
 .logo-myx-wrapper {
   flex: none;
-  width: 180px;
-  height: 80px;
+  width: 220px;
+  height: 110px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .logo-myx {
-  height: 200px;
+  height: 275px;
   width: auto;
   max-width: none;
   display: block;
