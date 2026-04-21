@@ -571,6 +571,10 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; }
   height: 80px;
   max-width: 240px;
 }
+.partner-row-lead .partner-logo-group .logo-myx {
+  height: 120px;
+  max-width: 240px;
+}
 .logo-invert {
   filter: grayscale(1) invert(1);
 }
